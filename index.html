@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHEVALIS Produktion</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      color: #1a1a1a;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #1a1a2e;
+      color: white;
+      padding: 20px 16px 16px;
+    }
+
+    header h1 {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    header .subtitle {
+      font-size: 13px;
+      color: #aaa;
+      margin-top: 4px;
+    }
+
+    .update-bar {
+      background: #16213e;
+      color: #88a;
+      font-size: 12px;
+      padding: 8px 16px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .update-bar .dot {
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: #4caf50;
+      display: inline-block;
+    }
+
+    .section {
+      padding: 12px 16px 4px;
+    }
+
+    .section-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 8px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 14px;
+      padding: 16px;
+      margin-bottom: 10px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+      border-left: 5px solid #ddd;
+      position: relative;
+    }
+
+    .card.critical { border-left-color: #e53935; }
+    .card.high     { border-left-color: #ff9800; }
+    .card.medium   { border-left-color: #fdd835; }
+    .card.low      { border-left-color: #42a5f5; }
+    .card.ok       { border-left-color: #4caf50; }
+
+    .card-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    .card-sku {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .badge {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 9px;
+      border-radius: 20px;
+      white-space: nowrap;
+      margin-left: 8px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .badge.critical { background: #ffebee; color: #c62828; }
+    .badge.high     { background: #fff3e0; color: #e65100; }
+    .badge.medium   { background: #fffde7; color: #f57f17; }
+    .badge.low      { background: #e3f2fd; color: #1565c0; }
+    .badge.ok       { background: #e8f5e9; color: #2e7d32; }
+
+    .badge-text {
+      display: block;
+    }
+
+    .prod-big {
+      font-size: 36px;
+      font-weight: 800;
+      line-height: 1;
+      margin: 10px 0 2px;
+      color: #1a1a1a;
+    }
+
+    .prod-unit {
+      font-size: 15px;
+      font-weight: 500;
+      color: #555;
+      margin-bottom: 12px;
+    }
+
+    .chargen-tag {
+      display: inline-block;
+      background: #f0f0f0;
+      border-radius: 8px;
+      padding: 4px 10px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #444;
+      margin-bottom: 12px;
+    }
+
+    .card-meta {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 6px;
+      border-top: 1px solid #f0f0f0;
+      padding-top: 10px;
+      margin-top: 2px;
+    }
+
+    .meta-item {
+      text-align: center;
+    }
+
+    .meta-val {
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .meta-label {
+      font-size: 10px;
+      color: #999;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .oos-date {
+      font-size: 13px;
+      color: #888;
+      margin-top: 8px;
+    }
+
+    .oos-date.urgent { color: #e53935; font-weight: 600; }
+
+    .card-ok .prod-big { color: #4caf50; }
+
+    .loading {
+      text-align: center;
+      padding: 60px 20px;
+      color: #888;
+      font-size: 16px;
+    }
+
+    .error-msg {
+      background: #ffebee;
+      color: #c62828;
+      padding: 16px;
+      margin: 16px;
+      border-radius: 10px;
+      font-size: 14px;
+    }
+
+    footer {
+      padding: 24px 16px;
+      text-align: center;
+      font-size: 12px;
+      color: #bbb;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🐴 CHEVALIS Produktion</h1>
+  <div class="subtitle">Produktionsplanung – Saison 2026</div>
+</header>
+
+<div class="update-bar">
+  <span class="dot"></span>
+  <span id="update-text">Lade Daten…</span>
+</div>
+
+<div id="content">
+  <div class="loading">⏳ Lade Produktionsplan…</div>
+</div>
+
+<footer>CHEVALIS / BERGBAD Wellness GmbH · Automatisch aktualisiert alle 3 Tage</footer>
+
+<script>
+const PRIORITY_LABEL = {
+  critical: "🔴 JETZT",
+  high:     "🟠 DIESE WOCHE",
+  medium:   "🟡 BALD",
+  low:      "🔵 GEPLANT",
+  ok:       "✅ GEDECKT",
+};
+
+const PRIORITY_ORDER = { critical:0, high:1, medium:2, low:3, ok:4 };
+
+function formatDate(iso) {
+  if (!iso) return "–";
+  const d = new Date(iso + "T00:00:00");
+  return d.toLocaleDateString("de-DE", { day:"numeric", month:"short" });
+}
+
+function daysUntil(iso) {
+  if (!iso) return null;
+  const d = new Date(iso + "T00:00:00");
+  const now = new Date(); now.setHours(0,0,0,0);
+  return Math.round((d - now) / 86400000);
+}
+
+function formatUpdated(iso) {
+  const d = new Date(iso);
+  return d.toLocaleString("de-DE", { day:"numeric", month:"short", hour:"2-digit", minute:"2-digit" }) + " Uhr";
+}
+
+function renderCard(item) {
+  const p = item.priority;
+  const isOk = p === "ok";
+  const days = daysUntil(item.oos_date);
+  const urgentOos = days !== null && days <= 21;
+
+  let prodLine = "";
+  if (isOk) {
+    prodLine = `<div class="prod-big" style="color:#4caf50">✓</div>
+                <div class="prod-unit">Kein Bedarf bis Saisonende</div>`;
+  } else if (item.is_kanister && item.chargen) {
+    prodLine = `<div class="prod-big">${item.chargen}</div>
+                <div class="prod-unit">Charge${item.chargen > 1 ? "n" : ""} à 300L noch nötig</div>
+                <div class="chargen-tag">= ${item.prod_needed.toLocaleString("de")} Einheiten</div>`;
+  } else {
+    prodLine = `<div class="prod-big">${item.prod_needed.toLocaleString("de")}</div>
+                <div class="prod-unit">Flaschen noch abfüllen</div>`;
+  }
+
+  const oosLine = item.oos_date
+    ? `<div class="oos-date ${urgentOos ? "urgent" : ""}">
+         OOS ca. ${formatDate(item.oos_date)}${days !== null ? ` (in ${days} Tagen)` : ""}
+       </div>`
+    : "";
+
+  return `
+  <div class="card ${p}">
+    <div class="card-top">
+      <div class="card-sku">${item.sku}</div>
+      <span class="badge ${p}">${PRIORITY_LABEL[p]}</span>
+    </div>
+    ${prodLine}
+    ${oosLine}
+    <div class="card-meta">
+      <div class="meta-item">
+        <div class="meta-val">${item.fba.toLocaleString("de")}</div>
+        <div class="meta-label">FBA</div>
+      </div>
+      <div class="meta-item">
+        <div class="meta-val">${item.inbound.toLocaleString("de")}</div>
+        <div class="meta-label">Unterwegs</div>
+      </div>
+      <div class="meta-item">
+        <div class="meta-val">${item.velocity.toFixed(1)}</div>
+        <div class="meta-label">Stk/Tag</div>
+      </div>
+    </div>
+  </div>`;
+}
+
+async function load() {
+  try {
+    const resp = await fetch("data.json?t=" + Date.now());
+    if (!resp.ok) throw new Error("HTTP " + resp.status);
+    const data = await resp.json();
+
+    document.getElementById("update-text").textContent =
+      "Zuletzt aktualisiert: " + formatUpdated(data.updated_at);
+
+    const sections = {
+      critical: [], high: [], medium: [], low: [], ok: []
+    };
+
+    for (const item of data.items) {
+      sections[item.priority]?.push(item);
+    }
+
+    let html = "";
+
+    const sectionDefs = [
+      { key: "critical", label: "🔴 Jetzt produzieren" },
+      { key: "high",     label: "🟠 Diese Woche" },
+      { key: "medium",   label: "🟡 Bald einplanen" },
+      { key: "low",      label: "🔵 Geplant" },
+      { key: "ok",       label: "✅ Gut versorgt" },
+    ];
+
+    for (const { key, label } of sectionDefs) {
+      const items = sections[key];
+      if (!items || items.length === 0) continue;
+      html += `<div class="section">
+                 <div class="section-label">${label}</div>`;
+      for (const item of items) {
+        html += renderCard(item);
+      }
+      html += `</div>`;
+    }
+
+    document.getElementById("content").innerHTML = html || "<div class='loading'>Keine Daten verfügbar.</div>";
+
+  } catch (e) {
+    document.getElementById("content").innerHTML =
+      `<div class="error-msg">⚠️ Daten konnten nicht geladen werden: ${e.message}</div>`;
+    document.getElementById("update-text").textContent = "Fehler beim Laden";
+  }
+}
+
+load();
+</script>
+</body>
+</html>

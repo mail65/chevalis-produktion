@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+.env
+_scraper_tmp.js
+node_modules/

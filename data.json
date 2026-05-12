@@ -1,0 +1,104 @@
+{
+  "updated_at": "2026-05-12T08:57:10.352166",
+  "updated_date": "2026-05-12",
+  "source": "sellerboard_live",
+  "saison_ende": "2026-09-30",
+  "items": [
+    {
+      "sku": "500ml Rauch",
+      "fba": 27,
+      "inbound": 212,
+      "total_stock": 239,
+      "velocity": 4.42,
+      "oos_date": "2026-06-15",
+      "prod_needed": 1020,
+      "chargen": null,
+      "priority": "high",
+      "is_kanister": false
+    },
+    {
+      "sku": "5L Natur",
+      "fba": 125,
+      "inbound": 0,
+      "total_stock": 125,
+      "velocity": 1.98,
+      "oos_date": "2026-06-08",
+      "prod_needed": 486,
+      "chargen": 9,
+      "priority": "high",
+      "is_kanister": true
+    },
+    {
+      "sku": "500ml Natur",
+      "fba": 415,
+      "inbound": 797,
+      "total_stock": 1212,
+      "velocity": 20.77,
+      "oos_date": "2026-06-29",
+      "prod_needed": 2175,
+      "chargen": null,
+      "priority": "medium",
+      "is_kanister": false
+    },
+    {
+      "sku": "500ml Knobi",
+      "fba": 763,
+      "inbound": 38,
+      "total_stock": 801,
+      "velocity": 5.23,
+      "oos_date": "2026-07-14",
+      "prod_needed": 817,
+      "chargen": null,
+      "priority": "medium",
+      "is_kanister": false
+    },
+    {
+      "sku": "3L Natur",
+      "fba": 254,
+      "inbound": 147,
+      "total_stock": 401,
+      "velocity": 3.42,
+      "oos_date": "2026-07-03",
+      "prod_needed": 746,
+      "chargen": 8,
+      "priority": "medium",
+      "is_kanister": true
+    },
+    {
+      "sku": "3L Rauch",
+      "fba": 253,
+      "inbound": 0,
+      "total_stock": 253,
+      "velocity": 1.66,
+      "oos_date": "2026-06-27",
+      "prod_needed": 300,
+      "chargen": 3,
+      "priority": "medium",
+      "is_kanister": true
+    },
+    {
+      "sku": "5L Rauch",
+      "fba": 221,
+      "inbound": 0,
+      "total_stock": 221,
+      "velocity": 1.22,
+      "oos_date": "2026-07-11",
+      "prod_needed": 134,
+      "chargen": 3,
+      "priority": "medium",
+      "is_kanister": true
+    },
+    {
+      "sku": "10L Natur",
+      "fba": 22,
+      "inbound": 50,
+      "total_stock": 72,
+      "velocity": 0.59,
+      "oos_date": "2026-07-07",
+      "prod_needed": 67,
+      "chargen": 3,
+      "priority": "medium",
+      "is_kanister": true
+    }
+  ]
+}
