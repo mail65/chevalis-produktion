@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-05-12T08:57:10.352166",
-  "updated_date": "2026-05-12",
-  "source": "sellerboard_live",
+  "updated_at": "2026-05-13T07:01:28.241619",
+  "updated_date": "2026-05-13",
+  "source": "fallback_cached",
   "saison_ende": "2026-09-30",
   "items": [
     {
@@ -11,7 +11,7 @@
       "total_stock": 239,
       "velocity": 4.42,
       "oos_date": "2026-06-15",
-      "prod_needed": 1020,
+      "prod_needed": 1017,
       "chargen": null,
       "priority": "high",
       "is_kanister": false
@@ -22,8 +22,8 @@
       "inbound": 0,
       "total_stock": 125,
       "velocity": 1.98,
-      "oos_date": "2026-06-08",
-      "prod_needed": 486,
+      "oos_date": "2026-06-09",
+      "prod_needed": 482,
       "chargen": 9,
       "priority": "high",
       "is_kanister": true
@@ -34,8 +34,8 @@
       "inbound": 797,
       "total_stock": 1212,
       "velocity": 20.77,
-      "oos_date": "2026-06-29",
-      "prod_needed": 2175,
+      "oos_date": "2026-06-30",
+      "prod_needed": 2159,
       "chargen": null,
       "priority": "medium",
       "is_kanister": false
@@ -46,8 +46,8 @@
       "inbound": 38,
       "total_stock": 801,
       "velocity": 5.23,
-      "oos_date": "2026-07-14",
-      "prod_needed": 817,
+      "oos_date": "2026-07-15",
+      "prod_needed": 813,
       "chargen": null,
       "priority": "medium",
       "is_kanister": false
@@ -59,7 +59,7 @@
       "total_stock": 401,
       "velocity": 3.42,
       "oos_date": "2026-07-03",
-      "prod_needed": 746,
+      "prod_needed": 740,
       "chargen": 8,
       "priority": "medium",
       "is_kanister": true
@@ -70,8 +70,8 @@
       "inbound": 0,
       "total_stock": 253,
       "velocity": 1.66,
-      "oos_date": "2026-06-27",
-      "prod_needed": 300,
+      "oos_date": "2026-06-28",
+      "prod_needed": 297,
       "chargen": 3,
       "priority": "medium",
       "is_kanister": true
@@ -95,7 +95,7 @@
       "total_stock": 72,
       "velocity": 0.59,
       "oos_date": "2026-07-07",
-      "prod_needed": 67,
+      "prod_needed": 66,
       "chargen": 3,
       "priority": "medium",
       "is_kanister": true
