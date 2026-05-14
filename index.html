@@ -302,10 +302,14 @@ function renderCard(item) {
        </div>`
     : "";
 
+  const typBadge = item.is_kanister
+    ? `<span style="font-size:10px;background:#1e3a5f;color:#7eb3f0;padding:2px 7px;border-radius:8px;margin-left:6px">Kanister</span>`
+    : `<span style="font-size:10px;background:#1a3a1a;color:#7ecf7e;padding:2px 7px;border-radius:8px;margin-left:6px">Flasche</span>`;
+
   return `
   <div class="card ${p}">
     <div class="card-top">
-      <div class="card-sku">${item.sku}</div>
+      <div class="card-sku">${item.sku} ${typBadge}</div>
       <span class="badge ${p}">${PRIORITY_LABEL[p]}</span>
     </div>
     ${prodLine}
