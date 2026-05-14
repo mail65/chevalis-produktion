@@ -15,7 +15,12 @@
       "prod_needed": 1311,
       "chargen": null,
       "priority": "high",
-      "is_kanister": false
+      "is_kanister": false,
+      "saison_bedarf": 3338,
+      "saison_gesichert_pct": 34,
+      "saison_fehlbestand": 2202,
+      "saison_chargen_empfehlung": 4,
+      "saison_ampel": "🟢 PRODUZIEREN"
     },
     {
       "sku": "500ml Rauch",
@@ -28,7 +33,12 @@
       "prod_needed": 194,
       "chargen": null,
       "priority": "medium",
-      "is_kanister": false
+      "is_kanister": false,
+      "saison_bedarf": 1249,
+      "saison_gesichert_pct": 21,
+      "saison_fehlbestand": 988,
+      "saison_chargen_empfehlung": 2,
+      "saison_ampel": "🟢 PRODUZIEREN"
     },
     {
       "sku": "5L Natur",
@@ -41,7 +51,12 @@
       "prod_needed": 78,
       "chargen": 1,
       "priority": "medium",
-      "is_kanister": true
+      "is_kanister": true,
+      "saison_bedarf": 601,
+      "saison_gesichert_pct": 27,
+      "saison_fehlbestand": 439,
+      "saison_chargen_empfehlung": 7,
+      "saison_ampel": "🟢 PRODUZIEREN"
     },
     {
       "sku": "3L Natur",
@@ -54,7 +69,12 @@
       "prod_needed": 0,
       "chargen": 0,
       "priority": "medium",
-      "is_kanister": true
+      "is_kanister": true,
+      "saison_bedarf": 1129,
+      "saison_gesichert_pct": 58,
+      "saison_fehlbestand": 479,
+      "saison_chargen_empfehlung": 5,
+      "saison_ampel": "🟢 PRODUZIEREN"
     },
     {
       "sku": "500ml Knobi",
@@ -67,7 +87,12 @@
       "prod_needed": 0,
       "chargen": null,
       "priority": "medium",
-      "is_kanister": false
+      "is_kanister": false,
+      "saison_bedarf": 1604,
+      "saison_gesichert_pct": 64,
+      "saison_fehlbestand": 580,
+      "saison_chargen_empfehlung": 1,
+      "saison_ampel": "🟡 OPTIONAL"
     },
     {
       "sku": "3L Rauch",
@@ -80,7 +105,12 @@
       "prod_needed": 0,
       "chargen": 0,
       "priority": "medium",
-      "is_kanister": true
+      "is_kanister": true,
+      "saison_bedarf": 544,
+      "saison_gesichert_pct": 82,
+      "saison_fehlbestand": 97,
+      "saison_chargen_empfehlung": 1,
+      "saison_ampel": "🟡 OPTIONAL"
     },
     {
       "sku": "5L Rauch",
@@ -93,7 +123,12 @@
       "prod_needed": 0,
       "chargen": 0,
       "priority": "medium",
-      "is_kanister": true
+      "is_kanister": true,
+      "saison_bedarf": 353,
+      "saison_gesichert_pct": 100,
+      "saison_fehlbestand": 0,
+      "saison_chargen_empfehlung": 0,
+      "saison_ampel": "🔴 STOP"
     },
     {
       "sku": "10L Rauch",
@@ -106,7 +141,12 @@
       "prod_needed": 0,
       "chargen": null,
       "priority": "medium",
-      "is_kanister": false
+      "is_kanister": false,
+      "saison_bedarf": 59,
+      "saison_gesichert_pct": 100,
+      "saison_fehlbestand": 0,
+      "saison_chargen_empfehlung": 0,
+      "saison_ampel": "🔴 STOP"
     },
     {
       "sku": "10L Natur",
@@ -119,7 +159,12 @@
       "prod_needed": 0,
       "chargen": 0,
       "priority": "medium",
-      "is_kanister": true
+      "is_kanister": true,
+      "saison_bedarf": 137,
+      "saison_gesichert_pct": 100,
+      "saison_fehlbestand": 0,
+      "saison_chargen_empfehlung": 0,
+      "saison_ampel": "🔴 STOP"
     }
   ]
 }
