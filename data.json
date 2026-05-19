@@ -1,17 +1,29 @@
 {
-  "updated_at": "2026-05-16T07:01:39.475764",
-  "updated_date": "2026-05-16",
+  "updated_at": "2026-05-19T07:01:31.261236",
+  "updated_date": "2026-05-19",
   "source": "fallback_cached",
   "saison_ende": "2026-09-30",
   "items": [
+    {
+      "sku": "500ml Natur",
+      "fba": 415,
+      "inbound": 797,
+      "total_stock": 1212,
+      "velocity": 20.77,
+      "oos_date": "2026-07-03",
+      "prod_needed": 2060,
+      "chargen": null,
+      "priority": "high",
+      "is_kanister": false
+    },
     {
       "sku": "500ml Rauch",
       "fba": 27,
       "inbound": 212,
       "total_stock": 239,
       "velocity": 4.42,
-      "oos_date": "2026-06-16",
-      "prod_needed": 1007,
+      "oos_date": "2026-06-17",
+      "prod_needed": 997,
       "chargen": null,
       "priority": "high",
       "is_kanister": false
@@ -22,8 +34,8 @@
       "inbound": 0,
       "total_stock": 253,
       "velocity": 1.66,
-      "oos_date": "2026-06-29",
-      "prod_needed": 288,
+      "oos_date": "2026-06-30",
+      "prod_needed": 279,
       "chargen": 3,
       "priority": "high",
       "is_kanister": true
@@ -34,23 +46,11 @@
       "inbound": 0,
       "total_stock": 125,
       "velocity": 1.98,
-      "oos_date": "2026-06-10",
-      "prod_needed": 473,
+      "oos_date": "2026-06-11",
+      "prod_needed": 463,
       "chargen": 8,
       "priority": "high",
       "is_kanister": true
-    },
-    {
-      "sku": "500ml Natur",
-      "fba": 415,
-      "inbound": 797,
-      "total_stock": 1212,
-      "velocity": 20.77,
-      "oos_date": "2026-07-01",
-      "prod_needed": 2109,
-      "chargen": null,
-      "priority": "medium",
-      "is_kanister": false
     },
     {
       "sku": "500ml Knobi",
@@ -58,8 +58,8 @@
       "inbound": 38,
       "total_stock": 801,
       "velocity": 5.23,
-      "oos_date": "2026-07-15",
-      "prod_needed": 798,
+      "oos_date": "2026-07-16",
+      "prod_needed": 784,
       "chargen": null,
       "priority": "medium",
       "is_kanister": false
@@ -70,8 +70,8 @@
       "inbound": 147,
       "total_stock": 401,
       "velocity": 3.42,
-      "oos_date": "2026-07-04",
-      "prod_needed": 723,
+      "oos_date": "2026-07-05",
+      "prod_needed": 705,
       "chargen": 8,
       "priority": "medium",
       "is_kanister": true
@@ -83,7 +83,7 @@
       "total_stock": 221,
       "velocity": 1.22,
       "oos_date": "2026-07-12",
-      "prod_needed": 131,
+      "prod_needed": 128,
       "chargen": 3,
       "priority": "medium",
       "is_kanister": true
@@ -94,8 +94,8 @@
       "inbound": 50,
       "total_stock": 72,
       "velocity": 0.59,
-      "oos_date": "2026-07-08",
-      "prod_needed": 65,
+      "oos_date": "2026-07-09",
+      "prod_needed": 63,
       "chargen": 3,
       "priority": "medium",
       "is_kanister": true
