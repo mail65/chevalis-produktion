@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-25T07:01:55.001101",
-  "updated_date": "2026-05-25",
+  "updated_at": "2026-05-28T07:00:40.498154",
+  "updated_date": "2026-05-28",
   "source": "fallback_cached",
   "saison_ende": "2026-09-30",
   "items": [
@@ -10,8 +10,8 @@
       "inbound": 0,
       "total_stock": 125,
       "velocity": 1.98,
-      "oos_date": "2026-06-13",
-      "prod_needed": 444,
+      "oos_date": "2026-06-15",
+      "prod_needed": 435,
       "chargen": 8,
       "priority": "critical",
       "is_kanister": true
@@ -22,8 +22,8 @@
       "inbound": 797,
       "total_stock": 1212,
       "velocity": 20.77,
-      "oos_date": "2026-07-06",
-      "prod_needed": 1962,
+      "oos_date": "2026-07-07",
+      "prod_needed": 1913,
       "chargen": null,
       "priority": "high",
       "is_kanister": false
@@ -34,8 +34,8 @@
       "inbound": 212,
       "total_stock": 239,
       "velocity": 4.42,
-      "oos_date": "2026-06-19",
-      "prod_needed": 977,
+      "oos_date": "2026-06-20",
+      "prod_needed": 967,
       "chargen": null,
       "priority": "high",
       "is_kanister": false
@@ -46,8 +46,8 @@
       "inbound": 147,
       "total_stock": 401,
       "velocity": 3.42,
-      "oos_date": "2026-07-08",
-      "prod_needed": 671,
+      "oos_date": "2026-07-09",
+      "prod_needed": 654,
       "chargen": 7,
       "priority": "high",
       "is_kanister": true
@@ -58,8 +58,8 @@
       "inbound": 0,
       "total_stock": 253,
       "velocity": 1.66,
-      "oos_date": "2026-07-03",
-      "prod_needed": 261,
+      "oos_date": "2026-07-04",
+      "prod_needed": 252,
       "chargen": 3,
       "priority": "high",
       "is_kanister": true
@@ -70,8 +70,8 @@
       "inbound": 38,
       "total_stock": 801,
       "velocity": 5.23,
-      "oos_date": "2026-07-18",
-      "prod_needed": 755,
+      "oos_date": "2026-07-19",
+      "prod_needed": 740,
       "chargen": null,
       "priority": "medium",
       "is_kanister": false
@@ -82,9 +82,9 @@
       "inbound": 0,
       "total_stock": 221,
       "velocity": 1.22,
-      "oos_date": "2026-07-13",
-      "prod_needed": 122,
-      "chargen": 3,
+      "oos_date": "2026-07-14",
+      "prod_needed": 119,
+      "chargen": 2,
       "priority": "medium",
       "is_kanister": true
     },
@@ -94,8 +94,8 @@
       "inbound": 50,
       "total_stock": 72,
       "velocity": 0.59,
-      "oos_date": "2026-07-12",
-      "prod_needed": 59,
+      "oos_date": "2026-07-13",
+      "prod_needed": 57,
       "chargen": 2,
       "priority": "medium",
       "is_kanister": true
