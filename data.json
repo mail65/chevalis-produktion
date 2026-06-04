@@ -1,18 +1,30 @@
 {
-  "updated_at": "2026-05-28T07:00:40.498154",
-  "updated_date": "2026-05-28",
+  "updated_at": "2026-06-04T07:00:37.523281",
+  "updated_date": "2026-06-04",
   "source": "fallback_cached",
   "saison_ende": "2026-09-30",
   "items": [
+    {
+      "sku": "500ml Rauch",
+      "fba": 27,
+      "inbound": 212,
+      "total_stock": 239,
+      "velocity": 4.42,
+      "oos_date": "2026-06-24",
+      "prod_needed": 918,
+      "chargen": null,
+      "priority": "critical",
+      "is_kanister": false
+    },
     {
       "sku": "5L Natur",
       "fba": 125,
       "inbound": 0,
       "total_stock": 125,
       "velocity": 1.98,
-      "oos_date": "2026-06-15",
-      "prod_needed": 435,
-      "chargen": 8,
+      "oos_date": "2026-06-19",
+      "prod_needed": 398,
+      "chargen": 7,
       "priority": "critical",
       "is_kanister": true
     },
@@ -22,20 +34,8 @@
       "inbound": 797,
       "total_stock": 1212,
       "velocity": 20.77,
-      "oos_date": "2026-07-07",
-      "prod_needed": 1913,
-      "chargen": null,
-      "priority": "high",
-      "is_kanister": false
-    },
-    {
-      "sku": "500ml Rauch",
-      "fba": 27,
-      "inbound": 212,
-      "total_stock": 239,
-      "velocity": 4.42,
-      "oos_date": "2026-06-20",
-      "prod_needed": 967,
+      "oos_date": "2026-07-12",
+      "prod_needed": 1755,
       "chargen": null,
       "priority": "high",
       "is_kanister": false
@@ -46,8 +46,8 @@
       "inbound": 147,
       "total_stock": 401,
       "velocity": 3.42,
-      "oos_date": "2026-07-09",
-      "prod_needed": 654,
+      "oos_date": "2026-07-12",
+      "prod_needed": 605,
       "chargen": 7,
       "priority": "high",
       "is_kanister": true
@@ -58,9 +58,33 @@
       "inbound": 0,
       "total_stock": 253,
       "velocity": 1.66,
-      "oos_date": "2026-07-04",
-      "prod_needed": 252,
+      "oos_date": "2026-07-09",
+      "prod_needed": 219,
       "chargen": 3,
+      "priority": "high",
+      "is_kanister": true
+    },
+    {
+      "sku": "5L Rauch",
+      "fba": 221,
+      "inbound": 0,
+      "total_stock": 221,
+      "velocity": 1.22,
+      "oos_date": "2026-07-18",
+      "prod_needed": 100,
+      "chargen": 2,
+      "priority": "high",
+      "is_kanister": true
+    },
+    {
+      "sku": "10L Natur",
+      "fba": 22,
+      "inbound": 50,
+      "total_stock": 72,
+      "velocity": 0.59,
+      "oos_date": "2026-07-17",
+      "prod_needed": 50,
+      "chargen": 2,
       "priority": "high",
       "is_kanister": true
     },
@@ -70,35 +94,11 @@
       "inbound": 38,
       "total_stock": 801,
       "velocity": 5.23,
-      "oos_date": "2026-07-19",
-      "prod_needed": 740,
+      "oos_date": "2026-07-22",
+      "prod_needed": 677,
       "chargen": null,
       "priority": "medium",
       "is_kanister": false
-    },
-    {
-      "sku": "5L Rauch",
-      "fba": 221,
-      "inbound": 0,
-      "total_stock": 221,
-      "velocity": 1.22,
-      "oos_date": "2026-07-14",
-      "prod_needed": 119,
-      "chargen": 2,
-      "priority": "medium",
-      "is_kanister": true
-    },
-    {
-      "sku": "10L Natur",
-      "fba": 22,
-      "inbound": 50,
-      "total_stock": 72,
-      "velocity": 0.59,
-      "oos_date": "2026-07-13",
-      "prod_needed": 57,
-      "chargen": 2,
-      "priority": "medium",
-      "is_kanister": true
     }
   ]
 }
